@@ -1,0 +1,152 @@
+<html class="w3-light-grey">
+<head>
+	
+	<link rel="stylesheet" href="CSS-W3.css"></link>
+	
+	<!-- CSS
+    ================================================== -->       
+    <!-- Bootstrap css file-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome css file-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Superslide css file-->
+    <link rel="stylesheet" href="css/superslides.css">
+    <!-- Slick slider css file -->
+    <link href="css/slick.css" rel="stylesheet"> 
+    <!-- smooth animate css file -->
+    <link rel="stylesheet" href="css/animate.css">  
+    <!-- Elastic grid css file -->
+    <link rel="stylesheet" href="css/elastic_grid.css"> 
+    <!-- Circle counter cdn css file -->
+    <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'>    
+    <!-- Default Theme css file -->
+    <link id="orginal" href="css/themes/default-theme.css" rel="stylesheet">
+    <!-- Main structure css file -->
+    <link href="style.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="CSS-W3.css"></link>
+	
+	<title>Problem API</title>
+	 <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="1.jpg"/>
+
+	
+	<link rel="shortcut icon" type="image/png" href="1.jpg"/>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+	.bg{
+		background-color:#d3d3d3;
+	}
+	.bs-example:after {
+  		content: "Example";
+  		position: absolute;
+  		top:  15px;
+  		left: 15px;
+  		font-size: 12px;
+  		font-weight: bold;
+  		color: #bbb;
+  		text-transform: uppercase;
+  		letter-spacing: 1px;
+		}		
+	.bs-callout {
+		    padding: 20px;
+		    margin: 20px 0;
+		    border: 1px solid #eee;
+		    border-left-width: 5px;
+		    border-radius: 3px;
+		}
+	.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    margin-left:5%;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.style13 {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+</style>
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/jquery.js"></script>
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/amazingslider.js"></script>
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/initslider-1.js"></script>
+	
+	<!--canvas id="myCanvas"></canvas-->
+</head>
+<body>
+<script type="text/javascript" src="problem.js" ></script>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <ul class="nav navbar-nav navbar-right">
+      <li> <a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp;Home</a></li>
+      <li><a href="handle.html"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp;&nbsp;Handle</a></li>
+      <li ><a href="blog.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>&nbsp;&nbsp;Blog</a></li>
+      <li><a href="contest.html"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>&nbsp;&nbsp;Contest</a></li>
+      <li><a href="problem.html"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>&nbsp;&nbsp;Problem</a></li>
+      <li><a><span></span>&nbsp;&nbsp;</a></li>
+    </ul>
+  </div>
+</nav>
+</br>
+<h2  style="margin-left:5%">Enter Problem set:</h2>
+	<div class="w3-container">
+	
+
+<input style="margin-left:4%;" class="w3-input w3-border w3-hover-light-grey " type="text" onkeyup="if(event.keyCode==13)document.getElementById('button0').click();" name="problem" id="i">
+<br>
+<button  style="margin-left:4%;" class="button2"type="submit" name="submit" value="submit" id="button0" onclick="sendURL()">SUBMIT</button>
+</div>
+<div class="w3-twothird w3-container" id = "for-output-3" style="font-size: 120%">
+        <!-- To display problems by tags -->
+        <p id = "Problem-list" ></p>
+        <table id="Problem-list-tag">
+        </table>
+ </div>
+
+
+<h4 id="para1" >Example: greedy</h4>
+<p id="problem" style="margin-left: 20%;margin-right: 20%;border-style: solid;border-color: green; display: none;"></p>
+</br></br></br></br>
+<div class="w3-container">
+<hr class="style13">
+<div  class="w3-container" style="margin-left:66em;margin-right:2em">
+
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//iste-laws.comeze.com/" class="fa fa-facebook"></a>
+<a href="https://plus.google.com/share?url=http%3A//iste-laws.comeze.com/" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//iste-laws.comeze.com/&title=L.A.W.S&summary=&source=" class="fa fa-linkedin"></a>
+<a href="https://twitter.com/home?status=http%3A//iste-laws.comeze.com/" class="fa fa-twitter"></a>
+</div>
+
+</div>
+
+</body>
+</html>
